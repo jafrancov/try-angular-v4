@@ -9,13 +9,12 @@ export class VideoListComponent implements OnInit {
   title = 'Video list';
   // videoList = ['item 1', 'item 2', 'item 3'];
   videoList = [
-    {name: 'item 1', slug: 'item-1'},
-    {name: 'item 2', slug: 'item-2'},
-    {name: 'item 3', slug: 'item-3'},
+    {name: 'item 1', slug: 'videos/item-1'},
+    {name: 'item 2', slug: 'videos/item-2'},
+    {name: 'item 3', slug: 'videos/item-3'},
   ];
   constructor() { }
 
   ngOnInit() {
   }
-
 }
