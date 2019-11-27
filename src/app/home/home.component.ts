@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CarouselConfig } from 'ngx-bootstrap/carousel';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,10 +11,25 @@ import { CarouselConfig } from 'ngx-bootstrap/carousel';
   ]
 })
 export class HomeComponent implements OnInit {
+  homeImageList = [
+    {image: 'assets/images/nature/1.jpg', title: 'Image 1', link: '/videos/item-1' },
+    {image: 'assets/images/nature/4.jpg', title: 'Image 4', link: '/videos/item-2' },
+    {image: 'assets/images/nature/5.jpg', title: 'Image 5', link: '/videos/item-3' },
+  ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  preventNormal(event: MouseEvent, image: any) {
+    if (!this.prevented) {
+      event.preventDefault();
+      // console.log(image.getAttribute('href'));
+      // image.setAttribute('href', '/videos');
+      // image.link = '/videos';
+      // this.prevented = true;
+      this.router.navigate(['/videos']);
+    }
+  }
 }
