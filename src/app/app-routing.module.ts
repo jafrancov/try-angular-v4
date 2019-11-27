@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {HomeComponent} from './home/home.component';
 import {VideoListComponent} from './video-list/video-list.component';
 import {VideoDetailComponent} from './video-detail/video-detail.component';
 
@@ -7,7 +8,7 @@ import {VideoDetailComponent} from './video-detail/video-detail.component';
 const routes: Routes = [
   {
     path: '',
-    component: VideoListComponent
+    component: HomeComponent
   },
   {
     path: 'videos',
