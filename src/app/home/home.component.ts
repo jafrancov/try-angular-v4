@@ -23,13 +23,13 @@ export class HomeComponent implements OnInit {
   }
 
   preventNormal(event: MouseEvent, image: any) {
-    if (!this.prevented) {
+    // if (!this.prevented) {
       event.preventDefault();
       // console.log(image.getAttribute('href'));
       // image.setAttribute('href', '/videos');
       // image.link = '/videos';
       // this.prevented = true;
       this.router.navigate(['/videos']);
-    }
+    // }
   }
 }

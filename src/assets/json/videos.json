@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Welcome",
+    "slug": "videos/item-1",
+    "embed": "xNgQOHwsIbg"
+  },
+  {
+    "name": "item 2",
+    "slug": "videos/item-2",
+    "embed": "xNgQOHwsIbg"
+  },
+  {
+    "name": "item 3",
+    "slug": "videos/item-3",
+    "embed": null
+  }
+]
