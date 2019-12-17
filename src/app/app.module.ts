@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 // third party import
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { VideoListComponent } from './video-list/video-list.component';
 import { VideoDetailComponent } from './video-detail/video-detail.component';
 import { SafePipe } from './utility/safe.pipe';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { SafePipe } from './utility/safe.pipe';
     VideoListComponent,
     VideoDetailComponent,
     SafePipe,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +31,7 @@ import { SafePipe } from './utility/safe.pipe';
     BrowserAnimationsModule,
     BsDropdownModule.forRoot(),
     CarouselModule.forRoot(),
+    FormsModule,
     HttpClientModule,
   ],
   providers: [],
