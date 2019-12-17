@@ -2,16 +2,22 @@
   {
     "name": "Welcome",
     "slug": "videos/item-1",
-    "embed": "xNgQOHwsIbg"
+    "embed": "xNgQOHwsIbg",
+    "image": "assets/images/nature/1.jpg",
+    "featured": true
   },
   {
     "name": "item 2",
     "slug": "videos/item-2",
-    "embed": "xNgQOHwsIbg"
+    "embed": "xNgQOHwsIbg",
+    "image": "assets/images/nature/4.jpg",
+    "featured": true
   },
   {
     "name": "item 3",
     "slug": "videos/item-3",
-    "embed": null
+    "embed": null,
+    "image": "assets/images/nature/5.jpg",
+    "featured": false
   }
 ]

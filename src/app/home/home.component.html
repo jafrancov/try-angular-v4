@@ -1,9 +1,9 @@
-<carousel>
+<carousel *ngIf="homeImageList">
   <slide *ngFor="let imageObj of homeImageList">
-    <a [href]="imageObj.link" (click)="preventNormal($event, imageObj)">
+    <a [href]="imageObj.slug" (click)="preventNormal($event, imageObj)">
     <img [src]="imageObj.image" alt="first slide" style="display: block; width: 100%;">
     <div class="carousel-caption d-none d-md-block">
-      <h3>{{ imageObj.title }}</h3>
+      <h3>{{ imageObj.name }}</h3>
     </div>
     </a>
   </slide>
