@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.req = this.httpClient.get('/assets/json/videos.json').subscribe(data => {
-      console.log(data);
+      // console.log(data);
       // this.homeImageList = data as [any];
       // console.log(this.videoList[0].name);
       for (const i of data[Symbol.iterator]()) {
