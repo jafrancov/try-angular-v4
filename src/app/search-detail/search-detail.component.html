@@ -1,7 +1,8 @@
-<p *ngIf="query">
+
+
+<div class="text-center">
+  <!--<app-search class="search-inline" [passedQuery]="query"></app-search>-->
+  <p style="margin-top: 50px;" *ngIf="query">
   Search for <b>{{ query }}</b>
 </p>
-
-<div class="text-center" *ngIf="!query">
-  <app-search class="search-inline"></app-search>
 </div>

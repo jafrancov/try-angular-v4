@@ -8,16 +8,15 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SearchDetailComponent implements OnInit, OnDestroy {
   private routeSub: any;
-  query: string;
+  // query: string;
 
   constructor(private route: ActivatedRoute) {
   }
 
   ngOnInit() {
     this.routeSub = this.route.params.subscribe(params => {
-      console.log(params);
-      this.query = params.q;
-      console.log(this.query);
+      // this.query = params.q;
+      // console.log(this.query);
     });
   }
 
